@@ -54,8 +54,8 @@ int online = 0;             // Variable de detección de línea
 
 // Constantes de PID
 #define Kp 0.13       // Constante proporcional
-#define Ki 0.0001     // Constante integral
-#define Kd 0.001      // Constante derivativa
+#define Ki 0.00065    // Constante integral
+#define Kd 0.00065    // Constante derivativa
 float P_error;        // PError proporcional
 float I_error;        // Error integral
 float D_error;        // Error derivativo
