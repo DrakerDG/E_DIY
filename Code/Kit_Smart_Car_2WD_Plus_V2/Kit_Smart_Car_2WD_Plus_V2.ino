@@ -345,7 +345,7 @@ void get_PID(void){
   cTime = millis();  // Obtiene el tiempo del microprocesador 
   eTime = (float)(cTime - pTime) / 1000; // Calcula el tiempo transcurrido
   I_error = I_error * 2 / 3 + P_error * eTime; // Calcula el error I
-  D_error = (P_error - lastError) / eTime;     // Calcula el error I
+  D_error = (P_error - lastError) / eTime;     // Calcula el error D
   PID_value = Kp * P_error + Ki * I_error + Kd * D_error;  // Calcula el valor PID
 
   lastError = P_error; // Salva el error P
